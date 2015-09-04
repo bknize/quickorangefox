@@ -1,0 +1,50 @@
+div{
+    //border: 1px solid #000;
+    box-sizing: border-box;
+}
+body{
+    background: #e5e5e5;
+    font-family: 'Arial', Arial, sans-serif;
+    letter-spacing: .1em;
+    color: #222c1c;
+}
+.header{
+    min-height: 40px;
+    text-align: center;
+    background: #fe943e;
+    border-bottom: 4px solid #222c1c;
+}
+.header img.logo{
+    height: 50%;
+    width: 50%;
+}
+.header img{
+    width: 80%;
+    height: 80%;
+}
+.blurb{
+    margin-top: 48px;
+}
+h1, h2, h3, h4, h5{
+    font-family: 'Varela Round', sans-serif;
+    letter-spacing: normal;
+    text-align: center;
+}
+a{
+    color: #5d7f36;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+a:hover{
+    color: #fe943e;
+}
+section{
+    margin-bottom: 36px;
+}
+section a{
+    text-align: center;
+    display: block;
+    font-size: 1.3em;
+}
