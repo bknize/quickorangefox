@@ -22,7 +22,6 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/main.css">
-  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
   
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -31,17 +30,22 @@
 </head>
 <body>
 
-  <div class="header u-full-width">
+  <div id="logo-container" class="header u-full-width">
     <div class="row">
       <div class="six columns offset-by-three">
         <img class="logo u-max-full-width" src="images/foxorange.svg" onerror="this.src='images/foxorange.png'">
       </div>
-      <div class="ten columns offset-by-one">
-        <img class="" src="images/title.svg" onerror="this.src='images/title.png'">
+    </div>
+
+    <div class="row">
+      <div id="title-container" class="header u-full-width">
+        <img class="header-sticky" src="images/title.svg" onerror="this.src='images/title.png'">
       </div>
     </div>
+
   </div>
-  
+
+
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
@@ -52,6 +56,11 @@
     </div>
     <div class="row">
       <div class="six columns">
+        <div class="row">
+          <div class="eight columns offset-by-two">
+            <img class="icon u-max-full-width" src="images/design.svg" onerror="this.src='images/design.png'">
+          </div>
+        </div>
         <section>
           <h2>We design!</h2>
           If your site's look needs polish, if you want something completely fresh, or if you're after the complete brand identity suite, we do it all.
@@ -59,6 +68,11 @@
         </section>
       </div>
       <div class="six columns">
+        <div class="row">
+          <div class="eight columns offset-by-two">
+            <img class="icon u-max-full-width" src="images/dev.svg" onerror="this.src='images/dev.png'">
+          </div>
+        </div>
         <section>
           <h2>We develop!</h2>
           Responsive, CMSs, web apps, frameworks, bells, whistles and good fundamentals. We're quality craftsmen with an enormous toolbox. 
@@ -68,6 +82,11 @@
     </div>
     <div clas="row">
       <div class="six columns">
+        <div class="row">
+          <div class="eight columns offset-by-two">
+            <img class="icon u-max-full-width" src="images/host.svg" onerror="this.src='images/host.png'">
+          </div>
+        </div>
         <section>
           <h2>We host!</h2>
           We provide hosting, domain, and server management, analytics tool kits, and email services. We dabble in SEO consultation and adwords campaigns. 
@@ -75,6 +94,11 @@
         </section>
       </div>
       <div class="six columns">
+        <div class="row">
+          <div class="eight columns offset-by-two">
+            <img class="icon u-max-full-width" src="images/support.svg" onerror="this.src='images/support.png'">
+          </div>
+        </div>
         <section>
           <h2>We support!</h2>
           We provide hosting, domain, and server management, analytics tool kits, and email services. We dabble in SEO consultation and adwords campaigns. 
@@ -91,15 +115,45 @@
            <li>Vestibulum auctor dapibus neque.</li>
         </ul>
       </div>
-      <div class="four columns">
-        icons
+      <div class="four columns sidebar">
+
+        <h5>In the bag:</h5>
+        <div class="row">
+          <img class="sidebar-logo" src="images/htmlcss.gif">
+        </div>
+        <div class="row">
+          <img class="sidebar-logo" src="images/wp.gif">
+        </div>
+        <div class="row">
+          <img class="sidebar-logo" src="images/jq.gif">
+        </div>
+        <div class="row">
+          <img class="sidebar-logo" src="images/bs.gif">
+        </div>
       </div>
     </div>
     <div class="row">
       <div class="eight columns">
         <h2>Group Resume</h2>
+        <p>Master cleanse normcore PBR&B slow-carb artisan. YOLO flexitarian sriracha, direct trade meggings art party food truck whatever blog mlkshk Odd Future literally tattooed butcher. Pinterest before they sold out kitsch, ennui viral +1 flannel ethical health goth pork belly. Hashtag beard Shoreditch banjo put a bird on it ugh. Meh synth authentic drinking vinegar flannel normcore.</p>
+        <p>Wes Anderson scenester readymade fanny pack drinking vinegar vinyl mixtape shabby chic tousled mustache swag before they sold out. Next level cornhole four loko blog, stumptown single-origin coffee irony typewriter crucifix ethical quinoa literally disrupt fashion axe brunch.</p>
+        <p>Sartorial Tumblr meh messenger bag, irony pop-up McSweeney's forage crucifix. Slow-carb pop-up normcore cliche. Fingerstache distillery swag, High Life mlkshk artisan Helvetica next level four loko Echo Park. Pork belly cold-pressed semiotics Carles direct trade, gluten-free meggings quinoa cornhole Bushwick biodiesel street art Portland. Plaid craft beer Vice salvia Intelligentsia slow-carb fanny pack typewriter.</p>
       </div>
-      <div class="four columns">client icons</div>
+      <div class="four columns sidebar">
+        <h5>We've worked with:</h5>
+        <div class="row">
+          <img class="client-logo" src="images/jd.gif">
+        </div>
+        <div class="row">
+          <img class="client-logo" src="images/hon.gif">
+        </div>
+        <div class="row">
+          <img class="client-logo" src="images/kone.gif">
+        </div>
+        <div class="row">
+          <img class="client-logo" src="images/gs.gif">
+        </div>
+      </div>
     </div>
     <div class="row">
       <h1>Contact Us</h1>
@@ -114,6 +168,8 @@
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="js/noframework.waypoints.min.js"></script>
     <script src="js/jquery.fittext.js"></script>
     <script src="js/main.js"></script>
 </body>
